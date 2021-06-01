@@ -52,10 +52,24 @@ document.getElementById('risultato-odd').innerHTML = arrayNum;
 
 
 
-
-
-
-
-
-
 // In un array sono contenuti i nomi degli invitati alla festa del grande Gatsby, chiedi all’utente il suo nome e comunicagli se può partecipare o no alla festa.
+
+var whiteList = ['Pippo', 'Pluto', 'Paperino', 'Qui', 'Quo', 'Qua', 'Paperina', 'Minni'];
+
+var nomeUser = prompt('Inserisci il tuo nome');
+nomeUser = nomeUser.charAt(0).toUpperCase() + nomeUser.slice(1).toLowerCase();
+
+console.log(nomeUser);
+
+var i = 0;
+var userFound = false;
+var msgTxt = 'Non risulti nella lista quindi non puoi entrare';
+while(i < whiteList.length && !userFound){
+    if(nomeUser == whiteList[i]){
+        userFound = true;
+        msgTxt = 'Entra pure, sei nella lista';
+    }
+    i++;
+}
+
+document.getElementById('risultato-partecipante').innerHTML = msgTxt;
