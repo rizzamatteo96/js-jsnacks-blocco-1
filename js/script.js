@@ -25,21 +25,37 @@ for(var i = 0; i < 5; i++){
 document.getElementById('risultato-somma-for').innerHTML += somma;
 
 // soluzione con il while
-var j = 0;
+var i = 0;
 var somma = 0;
-while(j < 5){
+while(i < 5){
     var numeroUser = parseInt(prompt('Inserisci un numero da sommare'));
     somma += numeroUser;
-    j++;
+    i++;
 }
 
 document.getElementById('risultato-somma-while').innerHTML += somma;
 
 
 
+// Snack 3 - Crea un array vuoto. Chiedi per 6 volte all’utente di inserire un numero, se è dispari inseriscilo nell’array
+
+var arrayNum = [];
+
+for (var i = 0; i < 6; i++){
+    var userOddNum = parseInt(prompt('Inserisci un numero se dispari verrà salvato'));
+    if (userOddNum % 2 != 0){
+        arrayNum.push(userOddNum);
+    }
+}
+
+document.getElementById('risultato-odd').innerHTML = arrayNum;
 
 
 
 
-// Crea un array vuoto. Chiedi per 6 volte all’utente di inserire un numero, se è dispari inseriscilo nell’array
+
+
+
+
+
 // In un array sono contenuti i nomi degli invitati alla festa del grande Gatsby, chiedi all’utente il suo nome e comunicagli se può partecipare o no alla festa.
