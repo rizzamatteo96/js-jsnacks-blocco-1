@@ -59,7 +59,7 @@ var whiteList = ['Pippo', 'Pluto', 'Paperino', 'Qui', 'Quo', 'Qua', 'Paperina', 
 var nomeUser = prompt('Inserisci il tuo nome');
 nomeUser = nomeUser.charAt(0).toUpperCase() + nomeUser.slice(1).toLowerCase();
 
-console.log(nomeUser);
+// console.log(nomeUser);
 
 var i = 0;
 var userFound = false;
