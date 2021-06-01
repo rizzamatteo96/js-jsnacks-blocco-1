@@ -13,6 +13,33 @@ if(firstWord.length > secondWord.length){
 
 
 
-// Il software deve chiedere per 5 volte all’utente di inserire un numero. Il programma stampa la somma di tutti i numeri   inseriti. Esegui questo programma in due versioni, con il for e con il while.
+// Snack 2 - Il software deve chiedere per 5 volte all’utente di inserire un numero. Il programma stampa la somma di tutti i numeri   inseriti. Esegui questo programma in due versioni, con il for e con il while.
+
+// soluzione con il for
+var somma = 0;
+for(var i = 0; i < 5; i++){
+    var numeroUser = parseInt(prompt('Inserisci un numero da sommare'));
+    somma += numeroUser;
+}
+
+document.getElementById('risultato-somma-for').innerHTML += somma;
+
+// soluzione con il while
+var j = 0;
+var somma = 0;
+while(j < 5){
+    var numeroUser = parseInt(prompt('Inserisci un numero da sommare'));
+    somma += numeroUser;
+    j++;
+}
+
+document.getElementById('risultato-somma-while').innerHTML += somma;
+
+
+
+
+
+
+
 // Crea un array vuoto. Chiedi per 6 volte all’utente di inserire un numero, se è dispari inseriscilo nell’array
 // In un array sono contenuti i nomi degli invitati alla festa del grande Gatsby, chiedi all’utente il suo nome e comunicagli se può partecipare o no alla festa.
